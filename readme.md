@@ -1,3 +1,11 @@
+# Overview
+
+This is a basic kernel module as found in The Linux Kernel Module Programming Guide (Salzman) and Linux Device Drivers (Corbet, Rubini, Kroah-Hartman).
+
+I initially had a bit of trouble setting up the build environment and this serves as I reminder to me and may be of some use to others.
+
+I have used the steps below on Debian 10, 11 and MX Linux. 
+
 
 # Setting Up
 
