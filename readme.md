@@ -1,4 +1,9 @@
 
+*Setting Up*
+
+sudo apt install build-essential linux-source flex bison libssl-dev
+
+*Notes*
 
 printk(KERN_ALERT "Hello World\n")
 
