@@ -1,8 +1,5 @@
 #include <linux/init.h>
 #include <linux/module.h>
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Robert Scott");
-MODULE_DESCRIPTION("Sample kernel module");
 
 static int __init  hello_init(void) {
 	printk(KERN_ALERT "Hello World\n");
@@ -15,3 +12,7 @@ static void __exit hello_exit(void) {
 
 module_init(hello_init);
 module_exit(hello_exit);
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Robert Scott");
+MODULE_DESCRIPTION("Sample kernel module");
