@@ -1,19 +1,49 @@
 
-**Setting Up**
+#Setting Up
 
-*Install required packages*
+##Install required packages
 
-sudo apt install build-essential linux-source flex bison libssl-dev
+`
+sudo apt install build-essential linux-source flex bison libssl-dev libelf-dev linux-headers-$(uname -r) 
+`
 
-*Extract kernel source tree into home directory*
+##Extract kernel source tree into home directory
 
-tar xvf /usr/src/linux-source-X.X.tar.xz ~
+`
+cd
+tar xf /usr/src/linux-source-$(uname -r | awk -F. '{print $1 "." $2}').tar.xz
+`
 
-This will create folder linux-X.X in the home folder.
+##Clone this repo and copy local Module.symvers
 
-Update the Makefile to point to this folder.
+`
+git clone https://github.com/bobscott45/sample-kernel-module
+cd sample-kernel-module
+cp /usr/src/linux-headers-$(uname -r)/Module.symvers .
+`
 
-**Notes**
+##Run make
+
+`
+cd sample-kernel-module
+make
+`
+
+##Install module
+`
+sudo insmod hello.ko
+`
+
+You should see the hello message by running `sudo dmesg`
+
+##Uninstall module
+`
+sudo rmmod hello
+`
+You should see the goodbye message by running `sudo dmesg`
+
+
+#Notes
 
 printk(KERN_ALERT "Hello World\n")
 
