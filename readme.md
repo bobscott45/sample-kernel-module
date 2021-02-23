@@ -39,9 +39,9 @@ If you run the command
 
 you should see something like:
 
-[163472.920368] hello: loading out-of-tree module taints kernel.
-[163472.920420] hello: module verification failed: signature and/or required key missing - tainting kernel
-[163472.920738] Hello World
+    [163472.920368] hello: loading out-of-tree module taints kernel.
+    [163472.920420] hello: module verification failed: signature and/or required key missing - tainting kernel
+    [163472.920738] Hello World
 
 
 
@@ -57,7 +57,7 @@ If you then run
 
 you should see something like:
 
-[163618.945236] Goodbye World
+    [163618.945236] Goodbye World
 
 
 # Notes
