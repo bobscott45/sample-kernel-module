@@ -1,9 +1,15 @@
 
-*Setting Up*
+**Setting Up**
+
+*Install required packages*
 
 sudo apt install build-essential linux-source flex bison libssl-dev
 
-*Notes*
+*Extract kernel source tree into home directory*
+
+tar xvf /usr/src/linux-source-X.X.tar.xz ~
+
+**Notes**
 
 printk(KERN_ALERT "Hello World\n")
 
