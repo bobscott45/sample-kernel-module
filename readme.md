@@ -33,18 +33,31 @@
 
     sudo insmod hello.ko
 
-
-You should see the hello message by running 
+If you run the command
     
     sudo dmesg
 
+you should see something like:
+
+[163472.920368] hello: loading out-of-tree module taints kernel.
+[163472.920420] hello: module verification failed: signature and/or required key missing - tainting kernel
+[163472.920738] Hello World
+
+
+
 ## Uninstall module
+
+To remove the module, run the command
    
     sudo rmmod hello
 
-You should see the goodbye message by running 
+If you then run 
     
     sudo dmesg
+
+you should see something like:
+
+[163618.945236] Goodbye World
 
 
 # Notes
