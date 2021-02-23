@@ -1,8 +1,8 @@
 obj-m += hello.o
 
 all:
-	make -C  ~/linux-source-5.8/ M=$(PWD) modules
+	make -C  ~/linux-source-$(shell uname -r | awk -F. '{print $$1 "."  $$2}')/ M=$(PWD) modules
 
 clean:
-	make -C ~/linux-source-5.8/ M=$(PWD) clean
+	make -C ~/linux-source-$(shell uname -r | awk -F. '{print $$1 "."  $$2}')/ M=$(PWD) clean
 
