@@ -9,6 +9,10 @@ sudo apt install build-essential linux-source flex bison libssl-dev
 
 tar xvf /usr/src/linux-source-X.X.tar.xz ~
 
+This will create folder linux-X.X in the home folder.
+
+Update the Makefile to point to this folder.
+
 **Notes**
 
 printk(KERN_ALERT "Hello World\n")
