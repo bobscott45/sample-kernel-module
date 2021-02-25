@@ -6,6 +6,8 @@ I initially had a bit of trouble setting up the build environment and this serve
 
 I have used the steps below on Debian 10, 11 and MX Linux. 
 
+You may be better off with: https://github.com/martinezjavier/ldd3
+
 
 # Setting Up
 
