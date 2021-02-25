@@ -4,3 +4,4 @@
 *.mod.c
 .tmp_versions
 *.order
+.idea
